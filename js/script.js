@@ -1,7 +1,9 @@
 //Business Logic
 var userNumber = function(user) {
-  if ((user % 3 === 0)) {// && (year % 100 !== 0) || (year % 400 === 0)) {
-    return "ping";
+  if (user % 15 === 0) {
+    return "pingpong";
+  }  else if (user % 3 === 0) {
+      return "ping";
   } else if (user % 5 === 0) {
     return "pong";
   } else {
