@@ -2,6 +2,8 @@
 var userNumber = function(user) {
   if ((user % 3 === 0)) {// && (year % 100 !== 0) || (year % 400 === 0)) {
     return "ping";
+  } else if (user % 5 === 0) {
+    return "pong";
   } else {
     return user;
   }
