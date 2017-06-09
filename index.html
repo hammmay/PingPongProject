@@ -9,20 +9,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>The Ping-Pong Game</h1>
-
+      <div class="jumbotron">
+        <h2>The Ping-Pong Game</h2>
+      </div>
+      <h4>Rules To Play</h4>
+      <p id=intro>Ping Pong will count all your numbers up to the number you entered, but with <span class="standout">4 exceptions</span>:</p>
+        <ol type="I">
+          <li>Numbers divisible by 3 become <span class="standout">"ping"</span></li>
+          <li>Numbers divisible by 5 become <span class="standout">"pong"</span></li>
+          <li>Numbers divisible by 15 become <span class="standout">"pingpong"</span></li>
+          <li>Ping Pong <strong>doesn't like</strong> negative numbers and 0s, so type carefully...</li>
+        </ol>
       <form id="pingpong">
         <div class="form-group">
-          <label for="number">Throw in a number:</label>
+          <label for="number" id="box">Throw in a number:</label>
           <input id="number" type="text">
         </div>
 
         <button type="submit" class="btn">Ping Me!</button>
       </form>
 
-      <div>
+<!--      <div>
         <p><span id="result"></span></p>
       </div>
+-->
+      <div>
+       <ul id="result">
+
+       </ul>
+     </div>
+
+
     </div>
   </body>
 </html>
