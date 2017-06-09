@@ -6,6 +6,7 @@ A web page that accepts a number from the user and returns as an appended list e
 |Behavior - Plain English|Input|Output|
 |---|---|---|
 |It can count up to the provided number|37|No higher than 37|
+|A reminder is returned to enter a positive number if it's a negative or 0|-1|enter a positive|
 |A number is returned as the same number if it is not divisible by 3|8|8|
 |A number is returned as the same number if it is not divisible by 5|7|7|
 |A number is returned as the term "ping" if it is divisible by 3|6|ping|

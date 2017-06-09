@@ -1,11 +1,13 @@
 //Business Logic
 var userNumber = function(user) {
-  if (user % 15 === 0) {
+  if ((user % 15 === 0) && (user > 0)) {
     return "pingpong";
-  }  else if (user % 3 === 0) {
+  }  else if ((user % 3 === 0) && (user > 0)) {
       return "ping";
-  } else if (user % 5 === 0) {
+  } else if ((user % 5 === 0) && (user > 0)) {
     return "pong";
+  } else if (user <= 0) {
+    return "Oops! You have to enter a positive number to play.";
   } else {
     return user;
   }
