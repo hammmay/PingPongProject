@@ -1,11 +1,11 @@
 //Business Logic
-var pingOrPongs = function(userNumber) {
-//  if ((userNumber % 3 === 0) && (userNumber % 100 !== 0) || (userNumber % 400 === 0)) {
-//    return true;
-//  } else {
-//    return false;
-//  }
-//};
+var userNumber = function(user) {
+  if ((user % 3 === 0)) {// && (year % 100 !== 0) || (year % 400 === 0)) {
+    return "ping";
+  } else {
+    return user;
+  }
+};
 
 
 //UI Logic
@@ -13,11 +13,12 @@ $(document).ready(function() {
   $("form#pingpong").submit(function(event) {
     event.preventDefault();
 
-    var userNumber = parseInt($("input#Number").val());
-    var result = pingOrPongs(userNumber);
+    var user = parseInt($("input#number").val());
+    var result = userNumber(user);
 
 
     $("#result").text(result);
+
   });
 
 
